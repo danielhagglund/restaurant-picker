@@ -1,0 +1,20 @@
+<div class="container">
+    <h2>Restaurants</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let restaurant of restaurant_list.restaurants">
+                <td>{{restaurant.name}}</td>
+                <td>{{restaurant.address}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>The winner is</h2>
+    <p class="winner">{{winner.name}} - {{winner.address}}</p>
+</div>
